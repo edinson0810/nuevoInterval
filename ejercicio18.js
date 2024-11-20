@@ -1,5 +1,5 @@
 
-const filtrar = async () => {
+const leer = async () => {
     try {
         return await fetch("./ejercicio18.json");
     } catch (error) {
@@ -8,13 +8,13 @@ const filtrar = async () => {
     }
 }
 
-filtrar().then((respuesta) =>{
-    respuesta.json().then(data => {
-        console.log(data.nombre);
-        console.log(data.edad);
-        console.log(data.profesion);
-        
-        
+leer().then(data => {
+    data.json().then(body => {
+        const filtro = body.filter(item => item.body.startsWith("l"))
+        console.table(filtro);
         
     })
+}).then(body => {
+    console.tble(body);
+    
 })
