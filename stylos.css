@@ -32,9 +32,9 @@ nav {
 
 #nav-list li a {
     text-decoration: none;
-    color: #333;
+    color: black;
 }
 
 #nav-list li a:hover {
-    color: #007BFF;
+    color: green;
 }
