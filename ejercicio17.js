@@ -9,8 +9,10 @@ const leer = async () => {
 
 leer().then((respuesta) =>{
     respuesta.json().then(data => {
-        console.log(data.nombr);
+        console.log(data.nombre);
         console.log(data.edad);
+        console.log(data.profesion);
+        
         
         
     })
